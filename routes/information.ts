@@ -1,5 +1,6 @@
 import express, { Router, Request, Response, NextFunction } from "express";
 import { InformationController } from '../controllers/informationsController';
+
 let router: Router = express.Router();
 
 router.get('/byname/:name', async(req: Request, res: Response, next: NextFunction) => {

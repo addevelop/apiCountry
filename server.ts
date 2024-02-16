@@ -5,11 +5,15 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import { swaggerOptions } from "./swaggerOptions";
 
+
+/***********************************/
+/*** Initialisation des package ****/
+
 dotenv.config();
 const app = express();
 const specs = swaggerJSDoc(swaggerOptions);
 
-const PORT: number = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+
 
 /*******************/
 /*** Les routes ****/
@@ -27,6 +31,9 @@ app.use(loggerMiddleware);
 
 app.use('/information', information_router);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
+
+
+const PORT: number = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
 app.listen(PORT, () => {
     console.log(`Le server est en cours d'éxecution sur le port ${PORT}`);

@@ -10,7 +10,7 @@ router.get('/bycapital/:capital', async(req: Request, res: Response, next: NextF
     InformationController.getCountryByCapital(req, res, next);
 });
 
-router.get('/bycodecountry/:code', async(req: Request, res: Response, next: NextFunction) => {
+router.get('/bycode/:code', async(req: Request, res: Response, next: NextFunction) => {
     InformationController.getCountryByCode(req, res, next);
 });
 

@@ -72,7 +72,7 @@ export class InformationController{
      *          - in: path
      *            name: capital
      *            required: true
-     *            description: Nom du pays.
+     *            description: Capital du pays.
      *            schema:
      *              type: string
      *      responses:
@@ -118,7 +118,7 @@ export class InformationController{
      *          - in: path
      *            name: code
      *            required: true
-     *            description: Nom du pays.
+     *            description: code du pays.
      *            schema:
      *              type: string
      *      responses:

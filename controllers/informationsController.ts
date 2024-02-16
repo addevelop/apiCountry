@@ -16,7 +16,7 @@ export class InformationController{
 
     /**
      * @swagger
-     * information/byname/{pays}:
+     * /information/byname/{pays}:
      *  get: 
      *      summary: Obtient les informations du pays.
      *      description: Recupérer les informations du pays.
@@ -63,7 +63,7 @@ export class InformationController{
 
     /**
      * @swagger
-     * information/bycapital/{capital}:
+     * /information/bycapital/{capital}:
      *  get: 
      *      summary: Obtient les informations du pays.
      *      description: Recupérer les informations du pays.
@@ -109,7 +109,7 @@ export class InformationController{
 
     /**
      * @swagger
-     * information/bycode/{code}:
+     * /information/bycode/{code}:
      *  get: 
      *      summary: Obtient les informations du pays.
      *      description: Recupérer les informations du pays.

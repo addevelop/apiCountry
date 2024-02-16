@@ -1,0 +1,32 @@
+# Ignorer les fichiers générés par npm
+/node_modules
+
+# Ignorer les fichiers de dépendances spécifiques à l'utilisateur
+/.pnp
+.pnp.js
+
+# Ignorer les fichiers de sauvegarde
+*.swp
+*~
+._*
+.DS_Store
+Thumbs.db
+
+# Ignorer les logs
+/logs
+
+# Ignorer les fichiers de configuration locaux
+# .env
+
+# Ignorer les fichiers de build
+/build
+
+# Ignorer les fichiers de cache
+/cache
+
+# Ignorer les fichiers d'output des tests
+/coverage
+
+# Ignorer les fichiers de configuration IDE
+.idea
+.vscode
